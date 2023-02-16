@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css">
+    <title>Vite App</title>
+    <!-- <style lang="sass">
+      @import url('./main.scss');
+    </style> -->
+  </head>
+  <body class="overflow-x-hidden ">
+  
+    <div class="relative w-screen nav_bar_color"><!--container for moblie + laptop responsive containers-->
+    <!--laptop responsive part -->
+    <div class=" mx-auto max-w-7xl  nav_bar_color">
+               <!--*-------***********header -- navBar *************************************************************-->
+       <!--navbar container-->
+       <div class="nabBar_container  flex items-center justify-between  pt-6  md:justify-start md:space-x-10">
+        <!--logo icon and company name container-->
+<div class="flex justify-start lg:w-0 lg:flex-1">
+<a href="#" class="flex justify-center align-baseline pl-20">
+<span class="sr-only">Your Company</span>
+        <!--logo icon-->
+<div class="logo_icon">
+<img src="./pictures/logo/Vector (1).png" alt="">
+<img src="./pictures/logo/Vector (2).png" alt="">
+<img src="./pictures/logo/Vector.png" alt="">
+</div>
+        <!-- logo heading / company name-->
+<div class=" logo_companyname ">
+patientgrid
+<!-- <span ><img src="./pictures/companyname_vector/p.png" alt=""></span>
+<span><img src="./pictures/companyname_vector/a.png" alt=""></span>
+<span><img src="./pictures/companyname_vector/t.png" alt=""></span>
+<span><img src="./pictures/companyname_vector/i.png" alt=""></span>
+<span><img src="./pictures/companyname_vector/..png" alt=""></span>
+<span><img src="./pictures/companyname_vector/e.png" alt=""></span>
+<span><img src="./pictures/companyname_vector/n.png" alt=""></span>
+<span><img src="./pictures/companyname_vector/t2.png" alt=""></span>
+<span><img src="./pictures/companyname_vector/g.png" alt=""></span>
+<span><img src="./pictures/companyname_vector/r.png" alt=""></span>
+<span><img src="./pictures/companyname_vector/i2.png" alt=""></span>
+<span><img src="./pictures/companyname_vector/..png" alt=""></span>
+<span><img src="./pictures/companyname_vector/d.png" alt=""></span> -->
+
+</div>
+</a>
+</div>
+<div class=" -my-2 -mr-2 md:hidden">
+<button type="button" class="   inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+<span class="   sr-only">Open menu</span>
+<!-- Heroicon name: outline/bars-3 -->
+<svg class="   h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+</button>
+</div>
+        <!--navbar right part iclude itmes with hover effect+++++++++++++++++++++++++-->
+<nav class="   hidden space-x-10 md:flex">
+        <!--itme 1 -->
+<a href="#" class="products navbar_item    text-base font-medium text-gray-500 hover:text-gray-900">product</a>
+        <!--itme 2 -->
+<a href="#" class="plans navbar_item  text-base font-medium text-gray-500 hover:text-gray-900">plans</a>
+         <!--itme 3 with hover effect open menu's option -->
+<div class="   relative toggleButton">
+        <!--itme 3 button -->
+<button type="button" class="more_buttom_layout   text-gray-500 group inline-flex items-center rounded-md text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" aria-expanded="false">
+<span class="more">More </span>
+      <!--item 3 icon inside button for drop down -->
+<!--Heroicon name: mini/chevron-down-->
+<img class="dropdown" src="./pictures/arrow_down.png" alt="arrow-down">
+</button>
+
+      <!--itme 3 item 3 all options which are shown on hover effect -->
+<div class="   togglecontent absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0">
+<div class="   overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+<div class="   relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+  <a href="#" class="   -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+    <!-- Heroicon name: outline/lifebuoy -->
+    <svg class="   h-6 w-6 flex-shrink-0 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288" />
+    </svg>
+    <div class="   ml-4">
+      <p class="   text-base font-medium text-gray-900">Help Center</p>
+      <p class="   mt-1 text-sm text-gray-500">Get all of your questions answered in our forums or contact support.</p>
+    </div>
+  </a>
+
+  <a href="#" class="   -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+    <!-- Heroicon name: outline/bookmark-square -->
+    <svg class="   h-6 w-6 flex-shrink-0 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9" />
+    </svg>
+    <div class="   ml-4">
+      <p class="   text-base font-medium text-gray-900">Guides</p>
+      <p class="   mt-1 text-sm text-gray-500">Learn how to maximize our platform to get the most out of it.</p>
+    </div>
+  </a>
+
+  <a href="#" class="   -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+    <!-- Heroicon name: outline/calendar -->
+    <svg class="   h-6 w-6 flex-shrink-0 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+    </svg>
+    <div class="   ml-4">
+      <p class="   text-base font-medium text-gray-900">Events</p>
+      <p class="   mt-1 text-sm text-gray-500">See what meet-ups and other events we might be planning near you.</p>
+    </div>
+  </a>
+
+  <a href="#" class="   -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+    <!-- Heroicon name: outline/shield-check -->
+    <svg class="   h-6 w-6 flex-shrink-0 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+    </svg>
+    <div class="   ml-4">
+      <p class="   text-base font-medium text-gray-900">Security</p>
+      <p class="   mt-1 text-sm text-gray-500">Understand how we take your privacy seriously.</p>
+    </div>
+  </a>
+</div>
+<div class="   bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
+  <div>
+    <h3 class="   text-base font-medium text-gray-500">Recent Posts</h3>
+    <ul role="list" class="   mt-4 space-y-4">
+      <li class="   truncate text-base">
+        <a href="#" class="   font-medium text-gray-900 hover:text-gray-700">Boost your conversion rate</a>
+      </li>
+
+      <li class="   truncate text-base">
+        <a href="#" class="   font-medium text-gray-900 hover:text-gray-700">How to use search engine optimization to drive traffic to your site</a>
+      </li>
+
+      <li class="   truncate text-base">
+        <a href="#" class="   font-medium text-gray-900 hover:text-gray-700">Improve your customer experience</a>
+      </li>
+    </ul>
+  </div>
+  <div class="   mt-5 text-sm">
+    <a href="#" class="   font-medium text-indigo-600 hover:text-indigo-500">
+      View all posts
+      <span aria-hidden="true"> &rarr;</span>
+    </a>
+  </div>
+</div>
+</div>
+</div><!--all options of itme 3 ends here -->
+</div><!--whole item 3 ends here -->
+</nav><!--navbar items part over here-->
+<!--navbar right part of login and register part -->
+<div class=" hidden items-center justify-end md:flex md:flex-1 lg:w-0">
+<a href="#" class="login whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Login</a>
+<a href="#" class="nav_button_registor ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Request a demo</a>
+</div>
+</div>
+
+
+
+<!--nav bar ends *********-->
+  </div><!--laptop responsive part ends here -->
+
+  <!--add mobile responsive part if required-->
+ 
+</div><!--container for moblie + laptop responsive containers ends here-->
+
+   <!-- //  seaction 1 ******************************************************************* -->
+
+    <!--seaction 1 include heading sub-content and button(start for free->)-->
+    <div class="  border flex justify-center flex-col items-center px-6 lg:px-8  py-32 "><!--whole container with 100vw-->
+
+          <h1 class="heading_section1   text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">medical software to attract and retain patients</h1>
+
+          <p class="subheading_section1   mt-6 text-lg leading-8 text-gray-600">Patientgrid’s communication platform helps improve patient experience while staff hours.</p>
+
+            <a href="#" class="button_seaction1   text-base font-semibold leading-7 text-gray-900"> Start For Free  
+              <!--add div with or span to overlap on add this class  design_button_seaction1_icon_undericon-->
+              <div class="button_seaction1_icon " aria-hidden="true">
+                <img src="./pictures/right_arrow/Ellipse 4_dark_purple.png" alt="">
+                <img src="./pictures/right_arrow/Ellipse 5light_-purple.png" alt="">
+                <img class="vector_icon" src="./pictures/right_arrow/Vector_next.png" alt="next">
+              </div>
+            </a>
+          
+        
+      </div><!--seaction 1 ends here-->
+
+  <!-- div for animation with 100vh -->
+  <div class=" rectangleanimate ">
+  </div>
+  <div class=" w-screen h-screen"></div>
+
+<!-- 2nd seaction********************************************************************************************** -->
+
+
+<!--if required add mobile responsive code from tailwind component ui here for seaction 2-->
+    <!--whole container for seaction 2 inclued inbox box-->
+    <main class="home  border mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <!--head of inbox box-->
+      <div class=" flex items-baseline justify-start border-b border-gray-200 pt-24 pb-6">
+        <!-- add icon logo -->
+        <h1 class=" w-72 text-4xl font-bold tracking-tight text-gray-900 capitalize">patientgrid</h1>
+        
+
+        <div class=" flex items-center justify-start "><!--replace icon -->
+          <button type="button" class=" -m-2 ml-5 p-2 text-gray-400 hover:text-gray-500 sm:ml-7">
+            <span class="  sr-only">View grid</span>
+            <!-- Heroicon name: mini/squares-2x2 -->
+            <img src="./pictures/inbox_vector.png" alt="">
+          </button>
+          <div class="   relative inline-block text-left">
+            <div>
+                  
+              <button type="button" class=" inbox  group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-gray-900" id="menu-button" aria-expanded="false" aria-haspopup="true">
+                inbox
+                <!-- Heroicon name: mini/chevron-down -->
+                
+              </button>
+            </div>
+            </div>
+          </div>
+
+      
+          <button type="button" class="   -m-2 ml-4 p-2 text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden">
+            <span class="   sr-only">Filters</span>
+            <!-- Heroicon name: mini/funnel -->
+            <svg class="   h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M2.628 1.601C5.028 1.206 7.49 1 10 1s4.973.206 7.372.601a.75.75 0 01.628.74v2.288a2.25 2.25 0 01-.659 1.59l-4.682 4.683a2.25 2.25 0 00-.659 1.59v3.037c0 .684-.31 1.33-.844 1.757l-1.937 1.55A.75.75 0 018 18.25v-5.757a2.25 2.25 0 00-.659-1.591L2.659 6.22A2.25 2.25 0 012 4.629V2.34a.75.75 0 01.628-.74z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div><!--right part inbox with inbox dropdown and icon-->
+      </div><!--head on inbox box ends here-->
+
+      <section aria-labelledby="products-heading" class="   pt-6 pb-24">
+        <h2 id="products-heading" class="   sr-only">Products</h2>
+
+        <div class="   grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+          <!-- Filters -->
+          <form class="   hidden lg:block">
+            <h3 class="   sr-only">Categories</h3>
+            <ul role="list" class="   space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
+              <li>
+                <h2 class="seaction2_subheading   capitalize font-bold">amanda charles</h2>
+              </li>
+             
+              <li>
+                
+        <div class="   inbox_close_button flex items-center  ">
+          
+          <div class="   relative inline-block text-left">
+            <div>
+                  
+              <button type="button" class="  dropdown_under_seaction2_subheading group inline-flex justify-end text-sm font-medium text-gray-700 hover:text-gray-900" id="menu-button" aria-expanded="false" aria-haspopup="true">
+               
+                <!-- Heroicon name: mini/chevron-down -->
+                <svg class="  -mr-1 ml-1 h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#6D6767" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <!--inbox copied icon-->
+            <div class=" flex items-center justify-start "><!--replace icon -->
+              <button type="button" class="-m-2 ml-5 p-2 text-gray-400 hover:text-gray-500 sm:ml-7">
+                <span class="sr-only">View grid</span>
+                <!-- Heroicon name: mini/squares-2x2 -->
+                <img src="./pictures/inbox_vector.png" alt="">
+              </button>
+              <div class="relative inline-block text-left">
+                <div>
+                      
+                  <button type="button" class=" inbox  group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-gray-900" id="menu-button" aria-expanded="false" aria-haspopup="true">
+                    inbox
+                    <!-- Heroicon name: mini/chevron-down -->
+                    
+                  </button>
+                </div>
+                </div>
+              </div>
+            <div class="   inbox_content_close absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+              <div class="   py-1" role="none">
+                <!--
+                  Active: "bg-gray-100", Not Active: ""
+
+                  Selected: "font-medium text-gray-900", Not Selected: "text-gray-500"
+                -->
+                <a href="#" class="   font-medium text-gray-900 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Most Popular</a>
+
+                <a href="#" class="   text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Best Rating</a>
+
+                <a href="#" class="   text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Newest</a>
+
+                <a href="#" class="   text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Price: Low to High</a>
+
+                <a href="#" class="   text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Price: High to Low</a>
+              </div>
+            </div>
+          </div>
+
+      
+          <button type="button" class="   -m-2 ml-4 p-2 text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden">
+            <span class="   sr-only">Filters</span>
+            <!-- Heroicon name: mini/funnel -->
+            <svg class="   h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M2.628 1.601C5.028 1.206 7.49 1 10 1s4.973.206 7.372.601a.75.75 0 01.628.74v2.288a2.25 2.25 0 01-.659 1.59l-4.682 4.683a2.25 2.25 0 00-.659 1.59v3.037c0 .684-.31 1.33-.844 1.757l-1.937 1.55A.75.75 0 018 18.25v-5.757a2.25 2.25 0 00-.659-1.591L2.659 6.22A2.25 2.25 0 012 4.629V2.34a.75.75 0 01.628-.74z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+              </li>
+             
+              <li class="sidebar_item"></li>
+              <li class="sidebar_item"></li>
+              <li class="sidebar_item"></li>
+              <li class="sidebar_item"></li>
+              <li class="sidebar_item"></li>
+            </ul>
+          </form>
+
+          <!-- Product grid -->
+          <div class="   lg:col-span-3">
+            <!-- Replace with your content -->
+            <div class="inbox_div_place_adjust h-96 rounded-lg lg:h-full">
+              <div>
+                <!-- this div is filter subsection of 2nd section -->
+                <!-- used inside 2nd seaction ++++++++++----------- -->
+<div class="   lg:flex lg:items-center lg:justify-between  ">
+
+  <div class="   mt-5 flex lg:mt-0 lg:ml-4">
+    <h3 class="order">order:</h3>
+    <span class=" hidden sm:block">
+      <button type="button" class="option1  inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+        <!-- Heroicon name: mini/pencil -->
+        newest
+      </button>
+    </span>
+
+    <span class="   hidden sm:block">
+      <button type="button" class="option   inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+        <!-- Heroicon name: mini/pencil -->
+        oldest
+      </button>
+  </span>
+    <h3 class="filter">filter:</h3>
+    <span class="   hidden sm:block">
+      <button type="button" class="option1   inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+        <!-- Heroicon name: mini/pencil -->
+        all
+      </button>
+    </span>
+
+    <span class="   hidden sm:block">
+      <button type="button" class=" option  inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+        <!-- Heroicon name: mini/pencil -->
+        calls
+      </button>
+    </span>
+
+    <span class="   hidden sm:block">
+      <button type="button" class=" option  inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+        <!-- Heroicon name: mini/pencil -->
+        sMS
+      </button>
+    </span>
+  
+    <span class="   ml-3 hidden sm:block">
+      <button type="button" class=" option  inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+        <!-- Heroicon name: mini/link -->
+        voicemails
+      </button>
+    </span>
+
+  
+    <!-- Dropdown
+    <div class="   relative ml-3 sm:hidden">
+      <button type="button" class="   inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
+        More -->
+        <!-- Heroicon name: mini/chevron-down -->
+        <!-- <svg class="   -mr-1 ml-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+        </svg>
+      </button>
+  
+  
+    </div> -->
+  </div>
+  </div>
+  <!--use second sub subsection and use flex to row direction-->
+  <div class="   overflow-hidden bg-white shadow sm:rounded-lg">
+
+    <div class="   border-t border-gray-200">
+      <dl>
+        <div class="   bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+          <dt class="inbox_table_th  text-sm font-medium text-gray-500 "> name</dt>
+          <dd class="inbox_table_th text   mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">last contact</dd>
+        </div>
+        <div class="   bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+          <dt class="   flex justify-around text-sm font-medium text-gray-500">
+            <img src="./pictures/profileimg/Ellipse 36.jpg" alt="profile pic">
+            <p class="mobile_number">(305) 440-0858</p>
+            <button class="phone_notifications  flex">
+              <img src="./pictures/Vector_hone_icon.png" alt="">
+            <span>1</span>
+            </button>
+            </button>
+          </dt>
+          <dd class="hours   mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">20 hours ago</dd>
+        </div>
+        <div class="   bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+          <dt class="   text-sm font-medium text-gray-500">
+            <img src="./pictures/profileimg/Vector.png" alt="profile pic">
+            <p class="mobile_number">(305) 440-0858</p>
+            <button class="phone_notifications  flex">
+              <img src="./pictures/Vector_hone_icon.png" alt="">
+            <span>7</span>
+            </button>
+          </dt>
+          <dd class="hours   mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">10 hours ago</dd>
+        </div>
+        <div class="   bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+          <dt class="   text-sm font-medium text-gray-500">
+            <img src="./pictures/profileimg/Ellipse 37.png" alt="profile pic">
+            <p class="mobile_number">(305) 440-0858</p>
+            <button class="phone_notifications  flex">
+              <img src="./pictures/Vector_hone_icon.png" alt="">
+            <span>2</span>
+            </button>
+          </dt>
+          <dd class=" hours  mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">01 hours ago</dd>
+        </div>
+        <div class="   bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+          <dt class="   text-sm font-medium text-gray-500">
+            <img src="./pictures/profileimg/Ellipse 38.png" alt="profile pic">
+            <p class="mobile_number">(305) 440-0858</p>
+            <button class="phone_notifications  flex">
+              <img src="./pictures/Vector_hone_icon.png" alt="">
+            <span>1</span>
+            </button>
+          </dt>
+          <dd class=" hours  mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">10 hours ago</dd>
+        </div>
+      </dl>
+    </div>
+    </div> <!--use second sub subsection ends here-->
+              </div>
+            </div>
+            <!-- /End replace -->
+          </div>
+        </div>
+      </section>
+    </main> <!--whole container for seaction 2 inclue inbox box-->
+
+<!-- *********************************************************************************************************************************************** -->
+<!--3rd seaction-->
+  <div class="   relative overflow-hidden">
+    <div class="   pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+      <div class=" section3_sub_container  flex justify-around relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+        <!-- left side div -->
+        <div class=" empty_shadow_div  mt-10  h-52 w-60"></div>
+
+        <div class="left_part   mt-10  flex flex-col justify-around place-items-center h-52 w-60">
+          <!-- star rating -->
+          <div class=" starbox  flex">
+            <img src="./pictures/Star 1.png" alt="">
+          <img src="./pictures/Star 1.png" alt="">
+          <img src="./pictures/Star 1.png" alt="">
+          <img src="./pictures/Star 1.png" alt="">
+          <img src="./pictures/Star 1.png" alt="">
+                                                            
+          </div>
+          <!-- profile name part -->
+          <div class="   flex">
+            <div>
+              <img src="./pictures/seaction3_profile.png" alt="profile image">
+            </div>
+              <div class="   sm:max-w-lg">
+              <h3 class="seaction3_profile_name font  font-bold tracking-tight text-gray-900 ">Dr.James L.</h3>
+              <p class="seaction3_profile_detail   mt-4 text-xl text-gray-500">psychologist, canada </p>
+            </div>
+          </div>
+         <!-- divider part -->
+         <div>   
+          <img class="divider" src="./pictures/Rectangle 36.png" alt="">
+         </div>
+      
+        </div>
+          <!-- right part div -->
+        <div class="   sm:max-w-lg">
+          <p class=" heading_seaction3  font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Bring new business in by getting more online reviews.</p>
+          <p class=" sub_heading_section3  mt-4 text-xl text-gray-500">94% Use review to choose new doctor.</p>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+<!--4th seaction***************************************************************************************-->
+<div class="   relative overflow-hidden bg-white">
+  <div class="   pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+    <div class="   flex justify-around relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+      
+        <!-- right part div -->
+      <div class="   sm:max-w-lg">
+        <h1 class=" seaction4_heading  font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Save time with collaborative tools and automations.</h1>
+        <p class="seaction4_subheading   mt-4 text-xl text-gray-500">15+ Staff hours saved per week..</p>
+      </div>
+      <!-- left side div -->
+      <div class=" section3_sub_container  flex justify-around relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+        <!-- left side div -->
+        <div class=" empty_shadow_div2  mt-10  h-52 w-60"></div>
+
+        <div class="right_container_s4 left_part   mt-10  flex flex-col justify-around place-items-center h-52 w-60">
+          <!-- star rating -->
+          <div class="section4_image_part_first_div  flex">
+            <img src="./pictures/s4/circle_p1_s4.png" alt=""> 
+           <div class="seaction4_lines_part_1 ">
+            <div class="first">
+              <div class="second"></div>
+            </div>
+            <div class="third"></div>
+           </div>                                       
+          </div>
+          <!-- profile name part -->
+          <div class="section4_part2_containor flex">
+            <div class="wave">
+              <img src="./pictures/s4/wave_line.png" alt="wave line">
+            </div>
+
+            <div class="section4_part2   sm:max-w-lg">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="setting_image_s4_conatiner">
+            <div class="setting_image_s4_first">
+              <img src="./pictures/s4/set_out.png" alt="">
+              <img src="./pictures/s4/set_circle.png" alt="">
+            </div>
+            <div class="setting_image_s4_second">
+              <img src="./pictures/s4/set_out.png" alt="">
+              <img src="./pictures/s4/set_circle.png" alt="">
+            </div>
+          </div>
+         <!-- divider part -->
+         <div>
+         
+          <img class="divider" src="./pictures/Rectangle 36.png" alt="">
+         </div>
+      
+        </div>
+    </div>
+  </div>
+  </div>
+<!-- *********************************************************************************************************
+******************************************* -->
+<!--5th seaction-->
+
+<!--3rd seaction copied-->
+  <div class="   relative overflow-hidden">
+    <div class="   pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+      <div class=" section3_sub_container  flex justify-around relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+        <!-- left side div -->
+        <div class=" empty_shadow_div  mt-10  h-52 w-60"></div>
+
+        <div class="s5_left_sub_container left_part   mt-10  flex flex-col justify-around place-items-center h-52 w-60">
+          <!-- star rating -->
+          <div class="   flex">
+            <img src="./pictures/s5/s5_img1.png" alt="">
+            <div>
+              <img src="./pictures/s5/s5_lin1.png" alt="">
+              <img src="./pictures/s5/s5_line2.png" alt="">
+              <img src="./pictures/s5/s-5_line3.png" alt="">
+            </div>
+          </div>
+          <!-- profile name part -->
+          <div class="   flex">
+           
+            <div>
+              <img src="./pictures/s5/s5_lin1.png" alt="">
+              <img src="./pictures/s5/s5_line2.png" alt="">
+              <img src="./pictures/s5/s-5_line3.png" alt="">
+            </div>
+            <img src="./pictures/s5/s5_img2.png" alt="">
+          </div>
+         <!-- divider part -->
+         <div>
+          <img src="./pictures/Rectangle 36.png" alt="">
+         </div>
+      
+        </div>
+          <!-- right part div -->
+        <div class="   sm:max-w-lg">
+          <p class=" heading_seaction3  font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Bring new business in by getting more online reviews.</p>
+          <p class=" sub_heading_section3  mt-4 text-xl text-gray-500">94% Use review to choose new doctor.</p>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+
+  <!-- ******************************************** -->
+  <!--6th part-->
+  <div class=" w-screen  overflow-hidden bg-white">
+    <div class="  pl-50  pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+      <div class=" s6_container  flex justify-around relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+      
+          <!-- left part div -->
+        <div class="headings_container  sm:max-w-lg">
+          <h1 class="seaction6_heading   font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Seamless collaboration for healthcare teams</h1>
+          <p class=" seaction6_subheading  mt-4 text-xl text-gray-500">With shared inboxes, any team member can resolve the team’s pending tasks. Individual staff member don’t get overwhelmed and patients are always take care of. </p>
+        </div>
+        <!-- right side div -->
+        <div>
+          
+  <div class="  mt-10  ">
+    
+    <!--copied modified seaction 2 sub seaction and modified-->
+   
+    <!-- Product grid -->
+    <div class=" bg-white p-2 lg:col-span-3">
+      <!-- Replace with your content -->
+      <div class="   h-96 rounded-lg  lg:h-full">
+        <div class="   flex items-baseline justify-start border-b border-gray-200 pt-15 pb-6">
+          <!-- add icon logo -->
+          <h1 class=" w-72 text-4xl font-bold tracking-tight text-gray-900 capitalize">patientgrid</h1>
+        
+
+        <div class=" flex items-center justify-start "><!--replace icon -->
+          <button type="button" class=" -m-2 ml-5 p-2 text-gray-400 hover:text-gray-500 sm:ml-7">
+            <span class="  sr-only">View grid</span>
+            <!-- Heroicon name: mini/squares-2x2 -->
+            <img src="./pictures/inbox_vector.png" alt="">
+          </button>
+          <div class="   relative inline-block text-left">
+            <div>
+                  
+              <button type="button" class=" inbox  group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-gray-900" id="menu-button" aria-expanded="false" aria-haspopup="true">
+                inbox
+                <!-- Heroicon name: mini/chevron-down -->
+                
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+         <!--over inbox nav part-->
+        <div>
+          <!-- this div is filter subsection of 2nd section -->
+          <!-- used inside 2nd seaction ++++++++++----------- -->
+          <div class="   lg:flex lg:items-center lg:justify-between  ">
+
+            <div class="   mt-5 flex lg:mt-0 lg:ml-4">
+              <h3 class="order">order:</h3>
+              <span class=" hidden sm:block">
+                <button type="button" class="option1  inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                  <!-- Heroicon name: mini/pencil -->
+                  newest
+                </button>
+              </span>
+          
+              <span class="   hidden sm:block">
+                <button type="button" class="option   inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                  <!-- Heroicon name: mini/pencil -->
+                  oldest
+                </button>
+            </span>
+              <h3 class="filter">filter:</h3>
+              <span class="   hidden sm:block">
+                <button type="button" class="option1   inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                  <!-- Heroicon name: mini/pencil -->
+                  all
+                </button>
+              </span>
+          
+              <span class="   hidden sm:block">
+                <button type="button" class=" option  inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                  <!-- Heroicon name: mini/pencil -->
+                  calls
+                </button>
+              </span>
+          
+              <span class="   hidden sm:block">
+                <button type="button" class=" option  inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                  <!-- Heroicon name: mini/pencil -->
+                  sMS
+                </button>
+              </span>
+            
+              <span class="   ml-3 hidden sm:block">
+                <button type="button" class=" option  inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                  <!-- Heroicon name: mini/link -->
+                  voicemails
+                </button>
+              </span>
+              </div> 
+            </div>
+            </div>
+ <!--use second sub subsection and use flex to row direction-->
+ <div class="  overflow-hidden bg-white shadow sm:rounded-lg">
+
+  <div class="   border-t border-gray-200">
+    <dl>
+      <div class="s6_hover_mails   bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+        <dt class="inbox_table_th  text-sm font-medium text-gray-500 "> name</dt>
+        <dd class="inbox_table_th text   mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">last contact</dd>
+      </div>
+      <div class="s6_hover_mails   bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+        <dt class="   flex justify-around text-sm font-medium text-gray-500">
+          <img src="./pictures/profileimg/Ellipse 36.jpg" alt="profile pic">
+          <p class="mobile_number">(305) 440-0858</p>
+          <button class="phone_notifications  flex">
+            <img src="./pictures/Vector_hone_icon.png" alt="">
+          <span>1</span>
+          </button>
+          </button>
+        </dt>
+        <dd class="hours   mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">20 hours ago</dd>
+      </div>
+      <div class=" s6_hover_mails  bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+        <dt class="   text-sm font-medium text-gray-500">
+          <img src="./pictures/profileimg/Vector.png" alt="profile pic">
+          <p class="mobile_number">(305) 440-0858</p>
+          <button class="phone_notifications  flex">
+            <img src="./pictures/Vector_hone_icon.png" alt="">
+          <span>7</span>
+          </button>
+        </dt>
+        <dd class="hours   mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">10 hours ago</dd>
+      </div>
+      <div class=" s6_hover_mails  bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+        <dt class="   text-sm font-medium text-gray-500">
+          <img src="./pictures/profileimg/Ellipse 37.png" alt="profile pic">
+          <p class="mobile_number">(305) 440-0858</p>
+          <button class="phone_notifications  flex">
+            <img src="./pictures/Vector_hone_icon.png" alt="">
+          <span>2</span>
+          </button>
+        </dt>
+        <dd class=" hours  mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">01 hours ago</dd>
+      </div>
+      <div class="s6_hover_mails   bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+        <dt class="   text-sm font-medium text-gray-500">
+          <img src="./pictures/profileimg/Ellipse 38.png" alt="profile pic">
+          <p class="mobile_number">(305) 440-0858</p>
+          <button class="phone_notifications  flex">
+            <img src="./pictures/Vector_hone_icon.png" alt="">
+          <span>1</span>
+          </button>
+        </dt>
+        <dd class=" hours  mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">10 hours ago</dd>
+      </div>
+    </dl>
+  </div>
+  </div> <!--use second sub subsection ends here-->
+</div>
+
+  </div>
+        
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+<!-- 7th section -->
+  <div class="   relative overflow-hidden bg-white">
+  <div class="   pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+    <div class=" s7_container   flex justify-around relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+      <div class="left_vector_s7"></div>
+      
+      <div>
+        <img src="./pictures/s7/s7_image.png" alt="">
+        <!-- <div class="   mt-10">
+                  <div class="   h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                    <img src="" alt="" class="   h-full w-full object-cover object-center">
+                  </div>
+         
+  
+     
+        </div> -->
+      </div>
+      <div class=" s7_textcontainer  text-center flex justify-around flex-col place-items-center sm:max-w-lg">
+        <h1 class=" s7_heading  font-bold tracking-tight text-gray-900 ">We work on a month-to-month basis, try for free with no commitments</h1>
+        <p class="sub_heading   mt-4 text-xl text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#" class=" s7_button  inline-block rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-center font-medium text-white hover:bg-indigo-700">14 Free Trial</a>
+      </div>
+      <div class="left_vector_s7_2"></div>
+    </div>
+  </div>
+  </div>
+  <!--get part of small div side text -->
+  <div class="  footer_container footer_color   flex justify-around">
+  <div class="  flex justify-around flex-col">
+
+      <div class=" footer_color  sm:max-w-lg">
+        <h1 class="   footer_color font-bold tracking-tight text-gray-900 ">patientgrid</h1>
+        <p class=" footer_color  mt-4  text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <div class="flex gap-2 pt-2">
+          <img src="./pictures/footer/facebook.png" alt="">
+          <img src="./pictures/footer/twitter.png" alt="">
+          <img src="./pictures/footer/instagram.png" alt="">
+        </div>
+      </div>
+      </div>
+    <!--icon and number and email in footer seaction-->
+    <div class="   flex justify-around flex-col">
+      <div class="   overflow-hidden bg-white shadow sm:rounded-lg">
+
+        <div class=" dl_footer  border-t border-gray-200">
+          <dl >
+     
+            <div class="  footer_color bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+              <dt class="   "> <img src="./pictures/footer/phone.png" alt=""></dt>
+              <dd class="   mt-1 text-sm text-white sm:col-span-2 sm:mt-0"> +91-8853923455</dd>
+            </div>
+            <div class=" footer_color  bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+              <dt class="   text-sm font-medium text-gray-500"><img src="./pictures/footer/whatspp.png" alt=""></dt>
+              <dd class=" footer_color  mt-1 text-sm  text-white  sm:col-span-2 sm:mt-0">+91-4567895478</dd>
+            </div>
+            <div class="footer_color   bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+              <dt class="   text-sm font-medium text-gray-500"><img src="./pictures/footer/email.png" alt=""></dt>
+              <dd class="   mt-1 text-sm text-white sm:col-span-2 sm:mt-0">patientgrid@gmail.com </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <!--email subscribe-->
+    <div class="footer_email_container">
+      
+      <label for="price" class="footer_label text-white label  block text-sm font-medium text-gray-700">subscribe newsletter </label>
+     
+      <div class="   relative mt-1 rounded-md shadow-sm flex">
+        <input type="text" name="price" id="price" class=" footer_input  block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Email">
+        <button type="submit" class=" footer_button  inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"><img src="./pictures/footer/next_f.png" alt=""></button>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  <!--part of navbar in footer-->
+  <div class=" footer_color  relative bg-white">
+    <div class="   mx-auto max-w-7xl px-6">
+      <div class="   flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+     
+        <div class="   -my-2 -mr-2 md:hidden">
+          <button type="button" class="   inline-flex items-center justify-center rounded-md bg-white p-2 text-white hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+            <span class="   sr-only">Open menu</span>
+            <!-- Heroicon name: outline/bars-3 -->
+            <svg class="   h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <nav class="  hidden space-x-10 md:flex">
+          <div class="  relative">
+            <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+         
+              <!--
+                Heroicon name: mini/chevron-down
+  
+                Item active: "text-gray-600", Item inactive: "text-gray-400"
+              -->
+          
+  
+          </div>
+          <!-- text-sm font-semibold leading-6 text-gray-900 
+          class="   text-base font-medium text-gray-500 hover:text-gray-900">Pricing</a>-->
+          <a href="#" class="   text-base font-medium text-white hover:text-gray-900">product</a>
+          <a href="#" class="   text-base font-medium text-white hover:text-gray-900">plans</a>
+  
+          <div class="   relative">
+            <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+            <button type="button" class="   toggleButton text-white group inline-flex items-center rounded-md text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" aria-expanded="false">
+              <span>More</span>
+              <!--
+                Heroicon name: mini/chevron-down
+  
+                Item active: "text-gray-600", Item inactive: "text-gray-400"
+              -->
+        
+            </button>
+  </div>
+  </nav>
+      </div>
+    </div>
+  </div>
+  
+            <!--
+              'More' flyout menu, show/hide based on flyout menu state.
+  
+              Entering: "transition ease-out duration-200"
+                From: "opacity-0 translate-y-1"
+                To: "opacity-100 translate-y-0"
+              Leaving: "transition ease-in duration-150"
+                From: "opacity-100 translate-y-0"
+                To: "opacity-0 translate-y-1"
+            -->
+  <!-- footer copyright banner -->
+  <div class="footer_color   relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 py-2.5 px-6 sm:px-3.5 sm:before:flex-1">
+
+
+  <div class="   flex flex-wrap items-center gap-y-2 gap-x-4">
+    <p class="   text-sm leading-6 text-white">
+      <strong class="   font-semibold">Copyright 2023</strong><svg viewBox="0 0 2 2" class="   mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>.All Rights Reserved.
+    </p>
+  </div>
+  <div class="   flex flex-1 justify-end">
+   
+  </div>
+  </div>
+
+
+ 
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+
+@mixin logoclass($p,$b,$c){
+    position:$p;
+    bottom:$b;
+    background: $c;
+  }
+  @mixin navitem{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #282828;
+  }
+  @mixin order_filter_text($w){
+    width: $w;
+    height: 26px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #000000;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  @mixin option($bg,$c){
+    background: $bg;
+    text-transform: capitalize;
+    color: $c;
+  }
+
+  @mixin seaction2mixin($w,$h,$f_w,$f_s,$l_h,$t_t,$c,){
+    width: 115px;
+    height: 26px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    /* identical to box height, or 186% */
+    text-transform: capitalize;
+    color: #8E8787;
+  }
+  @mixin insideAutolayout{
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  @mixin seaction3_4_5_heading{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    color: #282828;
+    font-style: normal;
+  }
+  @mixin seaction3_4_5_subheading{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    /* or 136% */
+    color: rgba(0, 0, 0, 0.7);
+  }
+  @mixin empty_shadow_div($right,$left){
+    width: 406px;
+  height: 288px;
+  position: absolute;
+  left:$left ;
+  top:100px ;
+  z-index: 0;
+  background: rgba(157, 134, 209, 0.15);
+  box-shadow: -30px 30px 30px rgba(40, 40, 40, 0.05);
+  border-radius: 30px;
+  right: $right;
+  
+  
+  }
